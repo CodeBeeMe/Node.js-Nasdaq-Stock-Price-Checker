@@ -1,0 +1,362 @@
+/*====================================styling for index.html====================================*/
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	color: #222;
+	text-align: center;
+	line-height: 1.4em;
+  /*background: #616a72;*/
+  /*background: #000a15;*/
+  background: #DAE2F8;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #D6A4A4, #DAE2F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+ol {
+	list-style-position: inside;
+}
+ul {
+	list-style-type: none;
+}
+
+a {
+	color: #a941ff;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input {
+  padding: 5px;
+}
+
+input[type=text] {
+  width: 220px;
+  text-align: center;
+}
+
+
+#title h1{
+  color: #555;
+  margin: 2.7%;
+  font-size: 52px;
+}
+
+#title h6{
+  color: #fff;
+  margin-top: 2.7%;
+  margin-bottom: -1.7%;
+  font-size: 22px;
+}
+
+.container {
+  padding: 0;
+  max-width: 967.5px;
+  margin: 0 auto;
+}
+
+#content {
+  color: #ececec;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  border-radius: 15px;  
+  background: rgba(0, 0, 0, .1);
+  /*background: -webkit-linear-gradient(to right, #faaca8, #ddd6f3);  /* Chrome 10-25, Safari 5.1-6 */
+  /*background: linear-gradient(to right, #faaca8, #ddd6f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.section {
+  color: #000;
+  margin: 5px;
+  padding: 0px 15px 15.5px 15.5px;
+  border-radius: 7px;
+  background: #fff6dd;
+}
+
+.section h2 {
+  color: #555;
+  padding: 5px;
+  background: rgba(0, 0, 0, .1);
+  border-radius: 5px;
+}
+
+.section h4 {
+  color: #333;
+  padding: 0;
+  margin: 5px 5px 10px 5px;
+}
+
+.section p {
+  font-family: monospace;
+  font-size: 16px;
+}
+
+.user-stories {
+  font-family: monospace;
+  font-size: 11px;
+  position: relative;
+  text-align: justify;
+  max-width: 960px;
+  margin: 10px 10px 0px 0px;
+  padding-left: 10px;
+}
+
+#display h4 {
+  margin-top: 10px;
+}
+
+.returned {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 676.5px;
+}
+
+.returned code {
+  font-family: monospace;
+  font-size: 12px;
+  word-wrap: break-word;
+}
+
+.status {
+  display: none;
+}
+
+#responseUi {  
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 11px;
+  justify-content: center;
+}
+
+.output {
+  display: flex;  
+  flex-wrap: wrap;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 7px;
+  justify-content: center;  
+  background: rgba(0, 0, 0, .1);
+  transition: .5s;
+}
+
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+
+.svg-inline--fa.fa-w-16 {
+    width: 1em;
+}
+
+
+#result {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+  font-size: 14px;
+  max-width: 300px;
+}
+
+.frontend {
+  padding-bottom: 5px;
+}
+
+#json {
+  margin: 0;
+  display: flex;
+  font-size: 12px;
+  flex-wrap: wrap; 
+  max-width: 300px;
+}
+
+#jsonResult {
+  word-wrap: break-word;
+}
+
+code {
+  color: #ab00ff;
+  border: 1px solid #a076c5;
+  border-radius: 5px;
+  padding: 0px 3px 0px 3px;
+  background-color: #ececec;
+  box-shadow: 1px 1px 2px 0px #a48bb5;
+}
+
+.sub-section {
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 7px;
+  background: rgba(0, 0, 0, .1);
+  max-width: 250px;  
+}
+
+.sub-section p {
+  max-width: 220px; 
+  font-size: 10px;
+}
+
+.examples {
+  margin: 10px 10px 0px -30px;
+  font-family: monospace;
+  position: relative;
+  text-align: justify;
+}
+
+.examples li {
+  margin-top: 1em;
+}
+
+form {
+  border: 2px solid transparent;
+  background: none;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+  transition: .2s;
+}
+
+form label {
+  font-size: 12px;
+}
+
+#testForm2 input[type=submit]:hover {
+  color: #71bc40;
+  border: 2px solid #71bc40;
+  background-color: #f4f9ff;
+  transition: .2s;  
+}
+
+#testForm:hover {
+  background: rgba(201, 140, 255, .5);
+  transition: .2s;
+}
+
+#testForm2:hover {
+  background: rgba(201, 140, 255, .5);
+  transition: .2s;
+}
+
+
+input[type=text]  {
+  margin: 5px;
+  width: 200px;
+  font-size: 12px;
+  padding: 4.5px;
+  color: #0b1928;  
+  background-color: #f4f9ff;
+  border-radius: 5px 5px 5px 5px;
+  border-color: rgba(0, 0, 0, .4);
+  border-width: 1px;
+/*border-right: none;*/
+  outline: none;
+}
+
+input[type=text]:active, input[type=text]:focus {
+  border: 1px solid #c98cff;
+  /*border-right: none;*/
+  color: #0b1928; 
+  box-shadow: 0px 0px 0px 3px #DAE2F8;
+  transition: .2s;
+  outline: none;
+}
+
+
+input[type=text]::placeholder, textarea::placeholder  {
+  color: rgba(0, 0, 0, .4);
+}
+
+input[type=submit], input[type=button] {
+  color: #f4f9ff;
+  width: 200px;
+  font-weight: bold;
+  margin: 5px auto; 
+  border-radius: 5px 5px 5px 5px;
+  font-size: 14px;
+  padding: 4px 10px 4px 10px;
+  border: 2px solid #c98cff;  
+  background-color: #333;
+  transition: .2s;
+}
+
+input[type=submit]:hover, input[type=button]:hover {
+  color: #333;
+  border: 2px solid #c98cff;
+  background-color: #f4f9ff;
+  transition: .2s;  
+}
+
+input[type=submit]:active, input[type=submit]:focus, input[type=button]:active, input[type=button]:focus {
+  border: 2px solid #c98cff;
+  box-shadow: 0px 0px 0px 5px #DAE2F8;
+  transition: .2s;
+  outline: none;
+}
+
+#footer {
+  font-family: monospace;
+  max-width: 967.5px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, .1);
+}
+ 
+#footer h5 {
+  margin-top: 0;
+  font-size: 12px;
+  color: #555;
+}
+#footer a {
+  color: #9116ff;
+  transition: 0.2s;
+  text-decoration: none;
+}
+#footer a:hover {
+  color: #fff;
+  transition: 0.2s;
+}
+
+
+::-webkit-scrollbar {
+  background: #DAE2F8;
+  width: 10px;  
+}
+
+::-webkit-scrollbar-track {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+::-webkit-scrollbar-thumb {  
+  background: rgba(0, 0, 0, .2);
+  border-radius: 15px;
+}
+
+
+@media (max-width: 1280px) {
+  body {
+    transform: scale(.85, .85);
+  }
+ 
+}
+
+@media (max-width: 960px) {
+  body {
+    font-size: 10px;
+  }
+  #title h1{
+    margin: 3.5%;
+    font-size: 32px;
+  }
+  #title h6{
+   margin-bottom: -2.5%;
+    font-size: 14px;
+  }
+    h1 {
+      font-size: 2em;
+    }
+}
