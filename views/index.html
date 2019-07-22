@@ -40,7 +40,7 @@
           </div>
         </div> 
         
-        <div class="section status" style="width: 967.5px">
+        <div class="section status">
           <div id="responseUi">
             <div class="output">
               <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="spinner" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" class="svg-inline--fa fa-spinner fa-w-16 fa-spin fa-lg"><path fill="currentColor" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z" class=""></path></svg>
@@ -50,7 +50,7 @@
           </div>
         </div>
         
-        <div class="section" style="max-width: 645px">
+        <div class="section example">
           <h2 style="text-align: center">Example usage:</h2>
           <ol class="examples">
             <li><code>/api/stock-prices?stock=goog</code></li>
@@ -69,7 +69,7 @@
             <h3>Get single price and total likes</h3>
             <div class="sub-section">
               <form id="testForm" class="border" action="/api/stock-prices" method="post">
-                <input type="text" name="stock" placeholder="*Stock code" style="width: 130px">
+                <input type="text" name="stock" placeholder="*Stock code">
                 <input type="checkbox" name="like" value="true">Like?<br>
                 <input type="submit" value="GET PRICE!">
               </form>
@@ -77,8 +77,8 @@
             <h3>Compare and get relative likes</h3>
             <div class="sub-section">
               <form id="testForm2" class="border" action="/api/stock-compare" method="post">
-                <input type="text" name="stock1" placeholder="*Stock code" style="width: 80px">
-                <input type="text" name="stock2" placeholder="*Stock code" style="width: 80px"><br>
+                <input type="text" name="stock1" placeholder="*Stock code">
+                <input type="text" name="stock2" placeholder="*Stock code"><br>
                 <input type="checkbox" name="like" value="true">Like both?<br>
                 <input type="submit" value="GET PRICE!">
               </form>    
