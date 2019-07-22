@@ -223,13 +223,6 @@ form label {
   font-size: 12px;
 }
 
-#testForm2 input[type=submit]:hover {
-  color: #71bc40;
-  border: 2px solid #71bc40;
-  background-color: #f4f9ff;
-  transition: .2s;  
-}
-
 #testForm:hover {
   background: rgba(201, 140, 255, .5);
   transition: .2s;
