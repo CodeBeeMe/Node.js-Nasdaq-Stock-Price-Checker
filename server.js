@@ -29,15 +29,18 @@ app.use(cors({origin: '*'})); //For FCC testing purposes only
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(helmet());
+
 app.use(helmet.xssFilter()); //Mitigate the risk of XSS - `helmet.xssFilter()`
 app.use(helmet.noSniff()); //Avoid inferring the response MIME type - `helmet.noSniff()`
 
-/*app.use(helmet.contentSecurityPolicy({
+app.use(helmet.contentSecurityPolicy({
   directives: {
     defaultSrc: ["'self'"],
-    scriptSrc: ["'self'", "trusted-cdn.com"]
-  }}))*/
+    scriptSrc: ["'self'", 'https://code.jquery.com'],
+    styleSrc: ["'self'", 'https://fonts.googleapis.com', 'https://use.fontawesome.com'],
+    fontSrc : ["'self'", 'https://fonts.gstatic.com', 'https://use.fontawesome.com' ]
+  }
+}))
 
 //Index page (static HTML)
 app.route('/')
@@ -72,18 +75,18 @@ client.connect((err) => {
 //Start our server and tests!
 app.listen(process.env.PORT || 3000, function () {
   console.log("Listening on port " + process.env.PORT);
-  if(process.env.NODE_ENV==='test') {
-    console.log('Running Tests...');
+  /*if(process.env.NODE_ENV==='test') {
+    //console.log('Running Tests...');
     setTimeout(function () {
       try {
-        //runner.run();
+        runner.run();
       } catch(e) {
         var error = e;
           console.log('Tests are not valid:');
           console.log(error);
       }
     }, 3500);
-  }
+  }*/
 });
 
 module.exports = app; //for testing
