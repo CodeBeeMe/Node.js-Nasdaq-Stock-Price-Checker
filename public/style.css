@@ -122,6 +122,7 @@ input[type=text] {
 }
 
 .status {
+  width: 967.5px;
   display: none;
 }
 
@@ -199,6 +200,10 @@ code {
   font-size: 10px;
 }
 
+.example {
+  max-width: 645px;
+}
+
 .examples {
   margin: 10px 10px 0px -30px;
   font-family: monospace;
@@ -221,6 +226,14 @@ form {
 
 form label {
   font-size: 12px;
+}
+
+#testForm2 input[type=text] {
+  width: 80px;
+}
+
+#testForm input[type=text] {
+  width: 130px;
 }
 
 #testForm:hover {
