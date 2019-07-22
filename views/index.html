@@ -55,8 +55,8 @@
           <ol class="examples">
             <li><code>/api/stock-prices?stock=goog</code></li>
             <li><code>/api/stock-prices?stock=goog&amp;like=true</code></li>
-            <li><code>/api/stock-prices?stock=goog&amp;stock=msft</code></li>
-            <li><code>/api/stock-prices?stock=goog&amp;stock=msft&amp;like=true</code></li>
+            <li><code>/api/stock-compare?stock1=goog&amp;stock2=msft</code></li>
+            <li><code>/api/stock-compare?stock1=goog&amp;stock2=msft&amp;like=true</code></li>
           </ol>
           <h2 style="text-align: center">Example return:</h2>
           <code>{"stockData":{"stock":"GOOG","price":"786.90","likes":1}}</code><br><br>
@@ -76,9 +76,9 @@
             </div>
             <h3>Compare and get relative likes</h3>
             <div class="sub-section">
-              <form id="testForm2" class="border" action="/api/stock-prices" method="post">
-                <input type="text" name="stock" placeholder="*Stock code" style="width: 80px">
-                <input type="text" name="stock" placeholder="*Stock code" style="width: 80px"><br>
+              <form id="testForm2" class="border" action="/api/stock-compare" method="post">
+                <input type="text" name="stock1" placeholder="*Stock code" style="width: 80px">
+                <input type="text" name="stock2" placeholder="*Stock code" style="width: 80px"><br>
                 <input type="checkbox" name="like" value="true">Like both?<br>
                 <input type="submit" value="GET PRICE!">
               </form>    
@@ -94,35 +94,7 @@
       </div>
       <!-- Your web-app is https, so your scripts need to be too -->
       <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous" type="text/javascript"></script>
-      <script type="text/javascript">
-        $(function() {
-          $('#testForm').submit(function(e) {
-            $.ajax({
-              url: '/api/stock-prices',
-              type: 'post',
-              data: $('#testForm').serialize(),
-              success: function(data) {
-                $('.status').css("display", "block");
-                $('#jsonResult').text(JSON.stringify(data));  
-              }
-            });
-            //setTimeout(() => location.reload(), 1000); //update list
-            e.preventDefault();
-          });
-          $('#testForm2').submit(function(e) {
-            $.ajax({
-              url: '/api/stock-prices',
-              type: 'post',
-              data: $('#testForm2').serialize(),
-              success: function(data) {
-                $('.status').css("display", "block");
-                $('#jsonResult').text(JSON.stringify(data)); 
-              }
-            });
-            e.preventDefault();
-          });
-        });
-      </script>
+      <script src="/public/client.js" type="text/javascript"></script>
   </div>
   </body>
 </html>
